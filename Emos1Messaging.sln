@@ -3,7 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32922.545
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AzureQueueSender", "AzureQueueSender\AzureQueueSender.csproj", "{A5EF5F3C-6DE8-4855-BC91-57059CC72FFD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AzureQueueSender", "AzureQueueSender\AzureQueueSender.csproj", "{A5EF5F3C-6DE8-4855-BC91-57059CC72FFD}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MessageReceiver", "MessageReceiver\MessageReceiver.csproj", "{E53D53BD-E9AB-4BBC-B6B9-614330B5D64D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MessageDbLogger", "MessageDbLogger\MessageDbLogger.csproj", "{8629EC44-B62B-43B9-875C-A107C689CD36}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmailClient", "EmailClient\EmailClient.csproj", "{A28F99F8-FFB6-434D-9587-67984FF67567}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +21,18 @@ Global
 		{A5EF5F3C-6DE8-4855-BC91-57059CC72FFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A5EF5F3C-6DE8-4855-BC91-57059CC72FFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A5EF5F3C-6DE8-4855-BC91-57059CC72FFD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E53D53BD-E9AB-4BBC-B6B9-614330B5D64D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E53D53BD-E9AB-4BBC-B6B9-614330B5D64D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E53D53BD-E9AB-4BBC-B6B9-614330B5D64D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E53D53BD-E9AB-4BBC-B6B9-614330B5D64D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8629EC44-B62B-43B9-875C-A107C689CD36}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8629EC44-B62B-43B9-875C-A107C689CD36}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8629EC44-B62B-43B9-875C-A107C689CD36}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8629EC44-B62B-43B9-875C-A107C689CD36}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A28F99F8-FFB6-434D-9587-67984FF67567}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A28F99F8-FFB6-434D-9587-67984FF67567}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A28F99F8-FFB6-434D-9587-67984FF67567}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A28F99F8-FFB6-434D-9587-67984FF67567}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -17,18 +17,57 @@ namespace AzureQueueSender.Services
             _config = config;
         }
 
-        public async Task SendMessageToQueueAsync<T>(T serviceBusMessage, string queueName)
+        public async Task SendMessageToQueueAsync<T>(IList<T> serviceBusMessages, string queueName)
         {
-            var client = new ServiceBusClient(_config.GetConnectionString("AzureServiceBus"));
+            if(serviceBusMessages.Count == 0)
+            {
+                return;
+            }
+
+            var clientOptions = new ServiceBusClientOptions() { TransportType = ServiceBusTransportType.AmqpWebSockets };
+
+            var client = new ServiceBusClient(_config.GetValue<string>("ServiceBus:ConnectionString"), clientOptions);
 
             var sender = client.CreateSender(queueName);
 
-            var messageBody = JsonSerializer.Serialize(serviceBusMessage);
+            using ServiceBusMessageBatch messageBatch = await sender.CreateMessageBatchAsync();
 
-            var message = new ServiceBusMessage(Encoding.UTF8.GetBytes(messageBody));
+            for (int i = 0; i < serviceBusMessages.Count; i++)
+            {
+                    
+                var messageBody = JsonSerializer.Serialize(serviceBusMessages[i]);
 
-            await sender.SendMessageAsync(message);
+                var message = new ServiceBusMessage(Encoding.UTF8.GetBytes(messageBody));
 
+                // try adding a message to the batch
+                if (messageBatch.TryAddMessage(message))
+                {
+                    serviceBusMessages.RemoveAt(i);
+                }
+                else
+                {
+                    //await sender.SendMessageAsync(message);
+                    // if it is too large for the batch
+                    //throw new Exception($"The message {i} is too large to fit in the batch.");
+
+                    break;
+                }
+                
+            }
+            try
+            {
+                // Use the producer client to send the batch of messages to the Service Bus queue
+                await sender.SendMessagesAsync(messageBatch);
+                Console.WriteLine($"A batch of {messageBatch.Count} messages has been published to the queue.");
+            }
+            finally
+            {
+                // Calling DisposeAsync on client types is required to ensure that network
+                // resources and other unmanaged objects are properly cleaned up.
+                await sender.DisposeAsync();
+                await client.DisposeAsync();
+                await SendMessageToQueueAsync(serviceBusMessages, queueName);
+            }
         }
     }
 }

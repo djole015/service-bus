@@ -1,6 +1,9 @@
 using AzureQueueSender.DataContext;
 using AzureQueueSender.Models;
 using AzureQueueSender.Services;
+using System.Runtime.InteropServices;
+using System.Text;
+using System.Text.Json;
 
 namespace AzureQueueSender
 {
@@ -27,14 +30,18 @@ namespace AzureQueueSender
 
                 using (var result = new ApplicationDbContext(_config))
                 {
-                    var emails = result.Email.ToList().Skip(5 * (count)).Take(5);
+                    var emails = result.Email.ToList().Skip(10 * (count)).Take(10).ToList();
+                    //List<EmailModel> emails = new List<EmailModel>();
+                    //var email = result.Email.Where(e => e.ID == 117238).FirstOrDefault();
+                    //var messageBody = JsonSerializer.Serialize(email);
+                    //_logger.LogInformation($"email Size : {Encoding.UTF8.GetBytes(messageBody).Length}");
+                    //for (int i = 0; i < 2000; i++)
+                    //{
+                    //    emails.Add(email);
+                    //}
                     count++;
 
-                    foreach (var email in emails)
-                    {
-                        _logger.LogInformation($"{email.UserID} - {email.CreatedOn}");
-                        await queue.SendMessageToQueueAsync(email, "emailqueue");
-                    }
+                    await queue.SendMessageToQueueAsync(emails, _config.GetValue<string>("ServiceBus:QueueName"));
                 }
 
                 await Task.Delay(5*1000, stoppingToken);

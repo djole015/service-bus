@@ -1,0 +1,325 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\E6530\\Documents\\C#\\Projects\\Emos1Messaging\\MessageReceiver\\MessageReceiver.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\E6530\\Documents\\C#\\Projects\\Emos1Messaging\\AzureQueueSender\\AzureQueueSender.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\E6530\\Documents\\C#\\Projects\\Emos1Messaging\\AzureQueueSender\\AzureQueueSender.csproj",
+        "projectName": "AzureQueueSender",
+        "projectPath": "C:\\Users\\E6530\\Documents\\C#\\Projects\\Emos1Messaging\\AzureQueueSender\\AzureQueueSender.csproj",
+        "packagesPath": "C:\\Users\\E6530\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\E6530\\Documents\\C#\\Projects\\Emos1Messaging\\AzureQueueSender\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\E6530\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Azure.Messaging.ServiceBus": {
+              "target": "Package",
+              "version": "[7.9.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.10, )"
+            },
+            "Microsoft.Extensions.Hosting": {
+              "target": "Package",
+              "version": "[6.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\E6530\\Documents\\C#\\Projects\\Emos1Messaging\\EmailClient\\EmailClient.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\E6530\\Documents\\C#\\Projects\\Emos1Messaging\\EmailClient\\EmailClient.csproj",
+        "projectName": "EmailClient",
+        "projectPath": "C:\\Users\\E6530\\Documents\\C#\\Projects\\Emos1Messaging\\EmailClient\\EmailClient.csproj",
+        "packagesPath": "C:\\Users\\E6530\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\E6530\\Documents\\C#\\Projects\\Emos1Messaging\\EmailClient\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\E6530\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\E6530\\Documents\\C#\\Projects\\Emos1Messaging\\AzureQueueSender\\AzureQueueSender.csproj": {
+                "projectPath": "C:\\Users\\E6530\\Documents\\C#\\Projects\\Emos1Messaging\\AzureQueueSender\\AzureQueueSender.csproj"
+              },
+              "C:\\Users\\E6530\\Documents\\C#\\Projects\\Emos1Messaging\\MessageDbLogger\\MessageDbLogger.csproj": {
+                "projectPath": "C:\\Users\\E6530\\Documents\\C#\\Projects\\Emos1Messaging\\MessageDbLogger\\MessageDbLogger.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\E6530\\Documents\\C#\\Projects\\Emos1Messaging\\MessageDbLogger\\MessageDbLogger.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\E6530\\Documents\\C#\\Projects\\Emos1Messaging\\MessageDbLogger\\MessageDbLogger.csproj",
+        "projectName": "MessageDbLogger",
+        "projectPath": "C:\\Users\\E6530\\Documents\\C#\\Projects\\Emos1Messaging\\MessageDbLogger\\MessageDbLogger.csproj",
+        "packagesPath": "C:\\Users\\E6530\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\E6530\\Documents\\C#\\Projects\\Emos1Messaging\\MessageDbLogger\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\E6530\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\E6530\\Documents\\C#\\Projects\\Emos1Messaging\\AzureQueueSender\\AzureQueueSender.csproj": {
+                "projectPath": "C:\\Users\\E6530\\Documents\\C#\\Projects\\Emos1Messaging\\AzureQueueSender\\AzureQueueSender.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.10, )"
+            },
+            "Microsoft.Extensions.Hosting": {
+              "target": "Package",
+              "version": "[6.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\E6530\\Documents\\C#\\Projects\\Emos1Messaging\\MessageReceiver\\MessageReceiver.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\E6530\\Documents\\C#\\Projects\\Emos1Messaging\\MessageReceiver\\MessageReceiver.csproj",
+        "projectName": "MessageReceiver",
+        "projectPath": "C:\\Users\\E6530\\Documents\\C#\\Projects\\Emos1Messaging\\MessageReceiver\\MessageReceiver.csproj",
+        "packagesPath": "C:\\Users\\E6530\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\E6530\\Documents\\C#\\Projects\\Emos1Messaging\\MessageReceiver\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\E6530\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\E6530\\Documents\\C#\\Projects\\Emos1Messaging\\AzureQueueSender\\AzureQueueSender.csproj": {
+                "projectPath": "C:\\Users\\E6530\\Documents\\C#\\Projects\\Emos1Messaging\\AzureQueueSender\\AzureQueueSender.csproj"
+              },
+              "C:\\Users\\E6530\\Documents\\C#\\Projects\\Emos1Messaging\\EmailClient\\EmailClient.csproj": {
+                "projectPath": "C:\\Users\\E6530\\Documents\\C#\\Projects\\Emos1Messaging\\EmailClient\\EmailClient.csproj"
+              },
+              "C:\\Users\\E6530\\Documents\\C#\\Projects\\Emos1Messaging\\MessageDbLogger\\MessageDbLogger.csproj": {
+                "projectPath": "C:\\Users\\E6530\\Documents\\C#\\Projects\\Emos1Messaging\\MessageDbLogger\\MessageDbLogger.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Azure.Messaging.ServiceBus": {
+              "target": "Package",
+              "version": "[7.9.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.10, )"
+            },
+            "Microsoft.Extensions.Hosting": {
+              "target": "Package",
+              "version": "[6.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
