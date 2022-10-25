@@ -13,6 +13,7 @@ namespace MessageDbLogger
         {
             _logger = logger;
             _config = config;
+            service = new MessageService(config);
         }
 
         protected override async Task ExecuteAsync(CancellationToken stoppingToken)
@@ -21,7 +22,9 @@ namespace MessageDbLogger
             {
                 _logger.LogInformation("Worker running at: {time}", DateTimeOffset.Now);
 
-                await Task.Delay(5000, stoppingToken);
+                await service.ReceiveMessageFromQueueAsync(_config.GetValue<string>("ServiceBus:LoggerQueueName"));
+
+                await Task.Delay(10*1000, stoppingToken);
             }
         }
     }

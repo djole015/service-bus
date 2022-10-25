@@ -32,16 +32,16 @@ namespace AzureQueueSender
                 {
                     var emails = result.Email.ToList().Skip(10 * (count)).Take(10).ToList();
                     //List<EmailModel> emails = new List<EmailModel>();
-                    //var email = result.Email.Where(e => e.ID == 117238).FirstOrDefault();
+                    //var email = result.Email.Where(e => e.ID == 230595).FirstOrDefault();
                     //var messageBody = JsonSerializer.Serialize(email);
                     //_logger.LogInformation($"email Size : {Encoding.UTF8.GetBytes(messageBody).Length}");
-                    //for (int i = 0; i < 2000; i++)
+                    //for (int i = 0; i < 2; i++)
                     //{
                     //    emails.Add(email);
                     //}
                     count++;
 
-                    await queue.SendMessageToQueueAsync(emails, _config.GetValue<string>("ServiceBus:QueueName"));
+                    await queue.SendMessagesToSenderQueueAsync(emails, _config.GetValue<string>("ServiceBus:SenderQueueName"));
                 }
 
                 await Task.Delay(5*1000, stoppingToken);

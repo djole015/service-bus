@@ -1,6 +1,7 @@
 ﻿using Azure.Messaging.ServiceBus;
 using AzureQueueSender.DataContext;
 using AzureQueueSender.Models;
+using AzureQueueSender.Services;
 using EmailClient;
 using MessageDbLogger;
 using Microsoft.Azure.Amqp.Framing;
@@ -73,6 +74,7 @@ namespace MessageReceiver.Services
 
             string jsonString = Encoding.UTF8.GetString(args.Message.Body);
             var message = JsonSerializer.Deserialize<EmailModel>(jsonString);
+            //var messageStatus = message.Status; 
 
             try
             {
@@ -86,12 +88,10 @@ namespace MessageReceiver.Services
             }
             catch(Exception ex)
             {
-                Console.WriteLine(ex.Message); 
+                Console.WriteLine(ex.Message);
+                await new QueueService(_config).SendMessagesToSenderQueueAsync(new List<EmailModel> { message }, _config.GetValue<string>("ServiceBus:SenderQueueName"));
                 return;    
             }
-            
-            //Console.WriteLine($"Received: {body}");
-
 
             // complete the message. message is deleted from the queue. 
             await args.CompleteMessageAsync(args.Message);

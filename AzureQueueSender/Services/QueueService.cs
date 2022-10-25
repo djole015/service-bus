@@ -1,4 +1,5 @@
 ﻿using Azure.Messaging.ServiceBus;
+using AzureQueueSender.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,7 +18,7 @@ namespace AzureQueueSender.Services
             _config = config;
         }
 
-        public async Task SendMessageToQueueAsync<T>(IList<T> serviceBusMessages, string queueName)
+        public async Task SendMessagesToSenderQueueAsync(IList<EmailModel> serviceBusMessages, string queueName)
         {
             if(serviceBusMessages.Count == 0)
             {
@@ -29,15 +30,16 @@ namespace AzureQueueSender.Services
             var client = new ServiceBusClient(_config.GetValue<string>("ServiceBus:ConnectionString"), clientOptions);
 
             var sender = client.CreateSender(queueName);
-
+            
             using ServiceBusMessageBatch messageBatch = await sender.CreateMessageBatchAsync();
 
             for (int i = 0; i < serviceBusMessages.Count; i++)
             {
-                    
                 var messageBody = JsonSerializer.Serialize(serviceBusMessages[i]);
 
                 var message = new ServiceBusMessage(Encoding.UTF8.GetBytes(messageBody));
+
+                //var serialNumber = await sender.ScheduleMessageAsync(message, (DateTimeOffset)serviceBusMessages[i].SendAt);
 
                 // try adding a message to the batch
                 if (messageBatch.TryAddMessage(message))
@@ -52,13 +54,12 @@ namespace AzureQueueSender.Services
 
                     break;
                 }
-                
             }
             try
             {
                 // Use the producer client to send the batch of messages to the Service Bus queue
                 await sender.SendMessagesAsync(messageBatch);
-                Console.WriteLine($"A batch of {messageBatch.Count} messages has been published to the queue.");
+                Console.WriteLine($"A batch of {messageBatch.Count} messages has been published to the messagesenderqueue.");
             }
             finally
             {
@@ -66,7 +67,7 @@ namespace AzureQueueSender.Services
                 // resources and other unmanaged objects are properly cleaned up.
                 await sender.DisposeAsync();
                 await client.DisposeAsync();
-                await SendMessageToQueueAsync(serviceBusMessages, queueName);
+                await SendMessagesToSenderQueueAsync(serviceBusMessages, queueName);
             }
         }
     }

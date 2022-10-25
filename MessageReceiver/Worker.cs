@@ -25,7 +25,7 @@ namespace MessageReceiver
             {
                 _logger.LogInformation("Worker running at: {time}", DateTimeOffset.Now);
 
-                await queue.ReceiveMessageFromQueueAsync(_config.GetValue<string>("ServiceBus:QueueName"));
+                await queue.ReceiveMessageFromQueueAsync(_config.GetValue<string>("ServiceBus:SenderQueueName"));
 
                 await Task.Delay(5 * 1000, stoppingToken);
             }
