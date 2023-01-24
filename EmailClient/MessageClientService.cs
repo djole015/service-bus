@@ -14,6 +14,9 @@ namespace EmailClient
             try
             {
                 Console.WriteLine($"EmailClient: Message to {message.EmailTo} sent");
+
+                // public void SendAsync(Email email, List<StorageAttachment> attList)
+
                 OnMessageSent(message);
             }
             catch (Exception ex) { 

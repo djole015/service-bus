@@ -90,3 +90,11 @@ C:\Users\E6530\Documents\C#\Projects\Emos1Messaging\MessageDbLogger\obj\Debug\ne
 C:\Users\E6530\Documents\C#\Projects\Emos1Messaging\MessageDbLogger\obj\Debug\net6.0\ref\MessageDbLogger.dll
 C:\Users\E6530\Documents\C#\Projects\Emos1Messaging\MessageDbLogger\bin\Debug\net6.0\Humanizer.dll
 C:\Users\E6530\Documents\C#\Projects\Emos1Messaging\MessageDbLogger\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\NikaTec\code\azure service bus\service-bus\MessageDbLogger\obj\Debug\net6.0\MessageDbLogger.csproj.AssemblyReference.cache
+C:\NikaTec\code\azure service bus\service-bus\MessageDbLogger\obj\Debug\net6.0\MessageDbLogger.GeneratedMSBuildEditorConfig.editorconfig
+C:\NikaTec\code\azure service bus\service-bus\MessageDbLogger\obj\Debug\net6.0\MessageDbLogger.AssemblyInfoInputs.cache
+C:\NikaTec\code\azure service bus\service-bus\MessageDbLogger\obj\Debug\net6.0\MessageDbLogger.AssemblyInfo.cs
+C:\NikaTec\code\azure service bus\service-bus\MessageDbLogger\obj\Debug\net6.0\MessageDbLogger.csproj.CoreCompileInputs.cache
+C:\NikaTec\code\azure service bus\service-bus\MessageDbLogger\obj\Debug\net6.0\MessageDbLogger.dll
+C:\NikaTec\code\azure service bus\service-bus\MessageDbLogger\obj\Debug\net6.0\ref\MessageDbLogger.dll
+C:\NikaTec\code\azure service bus\service-bus\MessageDbLogger\obj\Debug\net6.0\MessageDbLogger.pdb

@@ -74,7 +74,7 @@ namespace MessageDbLogger
             try
             {
                 // add handler to process messages
-                processor.ProcessMessageAsync += MessageHandler;
+                processor.ProcessMessageAsync += LogMessageToDatabaseHandler;
 
                 // add handler to process any errors
                 processor.ProcessErrorAsync += ErrorHandler;
@@ -100,7 +100,7 @@ namespace MessageDbLogger
         }
 
         // handle received messages
-        private async Task MessageHandler(ProcessMessageEventArgs args)
+        private async Task LogMessageToDatabaseHandler(ProcessMessageEventArgs args)
         {
 
             string jsonString = Encoding.UTF8.GetString(args.Message.Body);
@@ -112,6 +112,12 @@ namespace MessageDbLogger
                 Console.WriteLine($"LoggerReceiver: Message {message.EmailTo} received");
 
                 // log email
+                // ovde mora da se uzem parametar koji je klijent u pitanju i da se loguje u njegovu bau: npr. demo, cem, hou,..
+                // dinamicki se generise connection string za bazu na osnovu client code 
+                string clientCode = "";
+                string connectionString = "Data Source=emos-sql.eastus.cloudapp.azure.com;Initial Catalog=DemoESR;user id=emos1sa;password=Asdfghjklqwe1;MultipleActiveResultSets=true;Integrated Security=false;";
+
+                connectionString = connectionString.Replace("Catalog=DemoESR", $"Catalog={clientCode}ESR");
 
                 using (var result = new ApplicationDbContext(_config))
                 {

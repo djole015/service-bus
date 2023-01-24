@@ -85,3 +85,11 @@ C:\Users\E6530\Documents\C#\Projects\Emos1Messaging\AzureQueueSender\bin\Debug\n
 C:\Users\E6530\Documents\C#\Projects\Emos1Messaging\AzureQueueSender\bin\Debug\net6.0\Microsoft.Azure.Amqp.dll
 C:\Users\E6530\Documents\C#\Projects\Emos1Messaging\AzureQueueSender\bin\Debug\net6.0\Microsoft.Bcl.AsyncInterfaces.dll
 C:\Users\E6530\Documents\C#\Projects\Emos1Messaging\AzureQueueSender\bin\Debug\net6.0\System.Memory.Data.dll
+C:\NikaTec\code\azure service bus\service-bus\AzureQueueSender\obj\Debug\net6.0\AzureQueueSender.csproj.AssemblyReference.cache
+C:\NikaTec\code\azure service bus\service-bus\AzureQueueSender\obj\Debug\net6.0\AzureQueueSender.GeneratedMSBuildEditorConfig.editorconfig
+C:\NikaTec\code\azure service bus\service-bus\AzureQueueSender\obj\Debug\net6.0\AzureQueueSender.AssemblyInfoInputs.cache
+C:\NikaTec\code\azure service bus\service-bus\AzureQueueSender\obj\Debug\net6.0\AzureQueueSender.AssemblyInfo.cs
+C:\NikaTec\code\azure service bus\service-bus\AzureQueueSender\obj\Debug\net6.0\AzureQueueSender.csproj.CoreCompileInputs.cache
+C:\NikaTec\code\azure service bus\service-bus\AzureQueueSender\obj\Debug\net6.0\AzureQueueSender.dll
+C:\NikaTec\code\azure service bus\service-bus\AzureQueueSender\obj\Debug\net6.0\ref\AzureQueueSender.dll
+C:\NikaTec\code\azure service bus\service-bus\AzureQueueSender\obj\Debug\net6.0\AzureQueueSender.pdb

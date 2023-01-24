@@ -1,25 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\E6530\\Documents\\C#\\Projects\\Emos1Messaging\\EmailClient\\EmailClient.csproj": {}
+    "C:\\NikaTec\\code\\azure service bus\\service-bus\\EmailClient\\EmailClient.csproj": {}
   },
   "projects": {
-    "C:\\Users\\E6530\\Documents\\C#\\Projects\\Emos1Messaging\\AzureQueueSender\\AzureQueueSender.csproj": {
+    "C:\\NikaTec\\code\\azure service bus\\service-bus\\AzureQueueSender\\AzureQueueSender.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\E6530\\Documents\\C#\\Projects\\Emos1Messaging\\AzureQueueSender\\AzureQueueSender.csproj",
+        "projectUniqueName": "C:\\NikaTec\\code\\azure service bus\\service-bus\\AzureQueueSender\\AzureQueueSender.csproj",
         "projectName": "AzureQueueSender",
-        "projectPath": "C:\\Users\\E6530\\Documents\\C#\\Projects\\Emos1Messaging\\AzureQueueSender\\AzureQueueSender.csproj",
-        "packagesPath": "C:\\Users\\E6530\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\E6530\\Documents\\C#\\Projects\\Emos1Messaging\\AzureQueueSender\\obj\\",
+        "projectPath": "C:\\NikaTec\\code\\azure service bus\\service-bus\\AzureQueueSender\\AzureQueueSender.csproj",
+        "packagesPath": "C:\\Users\\Sinisa\\.nuget\\packages\\",
+        "outputPath": "C:\\NikaTec\\code\\azure service bus\\service-bus\\AzureQueueSender\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\E6530\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Sinisa\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -70,8 +68,7 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -80,26 +77,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\E6530\\Documents\\C#\\Projects\\Emos1Messaging\\EmailClient\\EmailClient.csproj": {
+    "C:\\NikaTec\\code\\azure service bus\\service-bus\\EmailClient\\EmailClient.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\E6530\\Documents\\C#\\Projects\\Emos1Messaging\\EmailClient\\EmailClient.csproj",
+        "projectUniqueName": "C:\\NikaTec\\code\\azure service bus\\service-bus\\EmailClient\\EmailClient.csproj",
         "projectName": "EmailClient",
-        "projectPath": "C:\\Users\\E6530\\Documents\\C#\\Projects\\Emos1Messaging\\EmailClient\\EmailClient.csproj",
-        "packagesPath": "C:\\Users\\E6530\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\E6530\\Documents\\C#\\Projects\\Emos1Messaging\\EmailClient\\obj\\",
+        "projectPath": "C:\\NikaTec\\code\\azure service bus\\service-bus\\EmailClient\\EmailClient.csproj",
+        "packagesPath": "C:\\Users\\Sinisa\\.nuget\\packages\\",
+        "outputPath": "C:\\NikaTec\\code\\azure service bus\\service-bus\\EmailClient\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\E6530\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Sinisa\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -113,11 +108,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\E6530\\Documents\\C#\\Projects\\Emos1Messaging\\AzureQueueSender\\AzureQueueSender.csproj": {
-                "projectPath": "C:\\Users\\E6530\\Documents\\C#\\Projects\\Emos1Messaging\\AzureQueueSender\\AzureQueueSender.csproj"
+              "C:\\NikaTec\\code\\azure service bus\\service-bus\\AzureQueueSender\\AzureQueueSender.csproj": {
+                "projectPath": "C:\\NikaTec\\code\\azure service bus\\service-bus\\AzureQueueSender\\AzureQueueSender.csproj"
               },
-              "C:\\Users\\E6530\\Documents\\C#\\Projects\\Emos1Messaging\\MessageDbLogger\\MessageDbLogger.csproj": {
-                "projectPath": "C:\\Users\\E6530\\Documents\\C#\\Projects\\Emos1Messaging\\MessageDbLogger\\MessageDbLogger.csproj"
+              "C:\\NikaTec\\code\\azure service bus\\service-bus\\MessageDbLogger\\MessageDbLogger.csproj": {
+                "projectPath": "C:\\NikaTec\\code\\azure service bus\\service-bus\\MessageDbLogger\\MessageDbLogger.csproj"
               }
             }
           }
@@ -137,8 +132,7 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -147,26 +141,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\E6530\\Documents\\C#\\Projects\\Emos1Messaging\\MessageDbLogger\\MessageDbLogger.csproj": {
+    "C:\\NikaTec\\code\\azure service bus\\service-bus\\MessageDbLogger\\MessageDbLogger.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\E6530\\Documents\\C#\\Projects\\Emos1Messaging\\MessageDbLogger\\MessageDbLogger.csproj",
+        "projectUniqueName": "C:\\NikaTec\\code\\azure service bus\\service-bus\\MessageDbLogger\\MessageDbLogger.csproj",
         "projectName": "MessageDbLogger",
-        "projectPath": "C:\\Users\\E6530\\Documents\\C#\\Projects\\Emos1Messaging\\MessageDbLogger\\MessageDbLogger.csproj",
-        "packagesPath": "C:\\Users\\E6530\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\E6530\\Documents\\C#\\Projects\\Emos1Messaging\\MessageDbLogger\\obj\\",
+        "projectPath": "C:\\NikaTec\\code\\azure service bus\\service-bus\\MessageDbLogger\\MessageDbLogger.csproj",
+        "packagesPath": "C:\\Users\\Sinisa\\.nuget\\packages\\",
+        "outputPath": "C:\\NikaTec\\code\\azure service bus\\service-bus\\MessageDbLogger\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\E6530\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Sinisa\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -180,8 +172,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\E6530\\Documents\\C#\\Projects\\Emos1Messaging\\AzureQueueSender\\AzureQueueSender.csproj": {
-                "projectPath": "C:\\Users\\E6530\\Documents\\C#\\Projects\\Emos1Messaging\\AzureQueueSender\\AzureQueueSender.csproj"
+              "C:\\NikaTec\\code\\azure service bus\\service-bus\\AzureQueueSender\\AzureQueueSender.csproj": {
+                "projectPath": "C:\\NikaTec\\code\\azure service bus\\service-bus\\AzureQueueSender\\AzureQueueSender.csproj"
               }
             }
           }
@@ -217,8 +209,7 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -227,7 +218,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }

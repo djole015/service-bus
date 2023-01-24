@@ -100,3 +100,11 @@ C:\Users\E6530\Documents\C#\Projects\Emos1Messaging\MessageReceiver\bin\Debug\ne
 C:\Users\E6530\Documents\C#\Projects\Emos1Messaging\MessageReceiver\bin\Debug\net6.0\EmailClient.exe
 C:\Users\E6530\Documents\C#\Projects\Emos1Messaging\MessageReceiver\bin\Debug\net6.0\EmailClient.dll
 C:\Users\E6530\Documents\C#\Projects\Emos1Messaging\MessageReceiver\bin\Debug\net6.0\EmailClient.pdb
+C:\NikaTec\code\azure service bus\service-bus\MessageReceiver\obj\Debug\net6.0\MessageReceiver.csproj.AssemblyReference.cache
+C:\NikaTec\code\azure service bus\service-bus\MessageReceiver\obj\Debug\net6.0\MessageReceiver.GeneratedMSBuildEditorConfig.editorconfig
+C:\NikaTec\code\azure service bus\service-bus\MessageReceiver\obj\Debug\net6.0\MessageReceiver.AssemblyInfoInputs.cache
+C:\NikaTec\code\azure service bus\service-bus\MessageReceiver\obj\Debug\net6.0\MessageReceiver.AssemblyInfo.cs
+C:\NikaTec\code\azure service bus\service-bus\MessageReceiver\obj\Debug\net6.0\MessageReceiver.csproj.CoreCompileInputs.cache
+C:\NikaTec\code\azure service bus\service-bus\MessageReceiver\obj\Debug\net6.0\MessageReceiver.dll
+C:\NikaTec\code\azure service bus\service-bus\MessageReceiver\obj\Debug\net6.0\ref\MessageReceiver.dll
+C:\NikaTec\code\azure service bus\service-bus\MessageReceiver\obj\Debug\net6.0\MessageReceiver.pdb

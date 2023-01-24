@@ -25,7 +25,7 @@ namespace MessageReceiver.Services
             _config = config;
         }
 
-        public async Task ReceiveMessageFromQueueAsync(string queueName)
+        public async Task SetupMessageSenderAsync(string queueName)
         {
             // The Service Bus client types are safe to cache and use as a singleton for the lifetime
             // of the application, which is best practice when messages are being published or read
@@ -43,7 +43,7 @@ namespace MessageReceiver.Services
             try
             {
                 // add handler to process messages
-                processor.ProcessMessageAsync += MessageHandler;
+                processor.ProcessMessageAsync += GetMessageQueueHandler;
 
                 // add handler to process any errors
                 processor.ProcessErrorAsync += ErrorHandler;
@@ -69,7 +69,7 @@ namespace MessageReceiver.Services
         }
 
         // handle received messages
-        private async Task MessageHandler(ProcessMessageEventArgs args)
+        private async Task GetMessageQueueHandler(ProcessMessageEventArgs args)
         {
 
             string jsonString = Encoding.UTF8.GetString(args.Message.Body);
@@ -81,6 +81,8 @@ namespace MessageReceiver.Services
                 Console.WriteLine($"Receiver: Message {message.EmailTo} received");
 
                 // send email
+                // napraviti Factory za message sender 
+                // sa kojim provider hocemo da saljemo poruku: npr. clickatel, ....
                 var messageClientService = new MessageClientService();
                 messageClientService.MessageSent += new MessageService(_config).OnMessageSent;
 

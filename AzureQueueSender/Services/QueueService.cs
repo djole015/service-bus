@@ -18,6 +18,21 @@ namespace AzureQueueSender.Services
             _config = config;
         }
 
+        // emos1 PutIntoSendingQueue()
+
+        // email model from Emos1
+        public static void PutEmailIntoSendingQueue(EmailModel emailModel )
+        { 
+        // salje jedan message
+        }
+
+        // email model from Emos1
+        public static void CreateMessageBatchForSendingQueue(List<EmailModel> emailModel)
+        {
+            // salje batch
+        }
+
+        // test method 
         public async Task SendMessagesToSenderQueueAsync(IList<EmailModel> serviceBusMessages, string queueName)
         {
             if(serviceBusMessages.Count == 0)

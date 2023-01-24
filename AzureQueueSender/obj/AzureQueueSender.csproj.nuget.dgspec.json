@@ -1,25 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\E6530\\Documents\\C#\\Projects\\Emos1Messaging\\AzureQueueSender\\AzureQueueSender.csproj": {}
+    "C:\\NikaTec\\code\\azure service bus\\service-bus\\AzureQueueSender\\AzureQueueSender.csproj": {}
   },
   "projects": {
-    "C:\\Users\\E6530\\Documents\\C#\\Projects\\Emos1Messaging\\AzureQueueSender\\AzureQueueSender.csproj": {
+    "C:\\NikaTec\\code\\azure service bus\\service-bus\\AzureQueueSender\\AzureQueueSender.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\E6530\\Documents\\C#\\Projects\\Emos1Messaging\\AzureQueueSender\\AzureQueueSender.csproj",
+        "projectUniqueName": "C:\\NikaTec\\code\\azure service bus\\service-bus\\AzureQueueSender\\AzureQueueSender.csproj",
         "projectName": "AzureQueueSender",
-        "projectPath": "C:\\Users\\E6530\\Documents\\C#\\Projects\\Emos1Messaging\\AzureQueueSender\\AzureQueueSender.csproj",
-        "packagesPath": "C:\\Users\\E6530\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\E6530\\Documents\\C#\\Projects\\Emos1Messaging\\AzureQueueSender\\obj\\",
+        "projectPath": "C:\\NikaTec\\code\\azure service bus\\service-bus\\AzureQueueSender\\AzureQueueSender.csproj",
+        "packagesPath": "C:\\Users\\Sinisa\\.nuget\\packages\\",
+        "outputPath": "C:\\NikaTec\\code\\azure service bus\\service-bus\\AzureQueueSender\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\E6530\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Sinisa\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -70,8 +68,7 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -80,7 +77,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }

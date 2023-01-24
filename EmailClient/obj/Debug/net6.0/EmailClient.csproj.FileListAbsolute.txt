@@ -93,3 +93,11 @@ C:\Users\E6530\Documents\C#\Projects\Emos1Messaging\EmailClient\bin\Debug\net6.0
 C:\Users\E6530\Documents\C#\Projects\Emos1Messaging\EmailClient\bin\Debug\net6.0\MessageDbLogger.exe
 C:\Users\E6530\Documents\C#\Projects\Emos1Messaging\EmailClient\bin\Debug\net6.0\MessageDbLogger.dll
 C:\Users\E6530\Documents\C#\Projects\Emos1Messaging\EmailClient\bin\Debug\net6.0\MessageDbLogger.pdb
+C:\NikaTec\code\azure service bus\service-bus\EmailClient\obj\Debug\net6.0\EmailClient.csproj.AssemblyReference.cache
+C:\NikaTec\code\azure service bus\service-bus\EmailClient\obj\Debug\net6.0\EmailClient.GeneratedMSBuildEditorConfig.editorconfig
+C:\NikaTec\code\azure service bus\service-bus\EmailClient\obj\Debug\net6.0\EmailClient.AssemblyInfoInputs.cache
+C:\NikaTec\code\azure service bus\service-bus\EmailClient\obj\Debug\net6.0\EmailClient.AssemblyInfo.cs
+C:\NikaTec\code\azure service bus\service-bus\EmailClient\obj\Debug\net6.0\EmailClient.csproj.CoreCompileInputs.cache
+C:\NikaTec\code\azure service bus\service-bus\EmailClient\obj\Debug\net6.0\EmailClient.dll
+C:\NikaTec\code\azure service bus\service-bus\EmailClient\obj\Debug\net6.0\ref\EmailClient.dll
+C:\NikaTec\code\azure service bus\service-bus\EmailClient\obj\Debug\net6.0\EmailClient.pdb
